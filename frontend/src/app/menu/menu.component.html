@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="jumbotron">
+  <nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed">
+        </button>
+
+      </div>
+
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li [ngClass]="{active: activeRoute('/')}"><a routerLink="/">Menu Inicial</a></li>
+          <li [ngClass]="{active: activeRoute('/cad/novo')}"><a routerLink="/cad/novo">Adicionar</a></li>
+          <li [ngClass]="{active: activeRoute('/cad')}"><a routerLink="/cad">Listar</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </nav>
+</div>
+
+
+
+
+</body>
+</html>
